@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+  box-shadow: 0 -10px 10px 15px rgba(0, 0, 0, 0.5);
+  min-height: 15.7%;
+  //adaptacion para mozilla, firefox y safari
+  -webkit-box-shadow: 0 -10px 10px 15px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -10px 10px 15px rgba(0, 0, 0, 0.5);
+  //z-index es para que este encima de otros elementos
+  z-index: 1;
+}
