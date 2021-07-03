@@ -1,4 +1,4 @@
-import { getToken, hasExpiredToken } from "../api/token";
+import { getToken, hasExpiredToken } from "../Api/token";
 //aironsession
 //nextauth
 export async function authFetch(url, params, logout) {

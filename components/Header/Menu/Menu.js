@@ -5,7 +5,7 @@ import BasicModal from "../../Modal/BasicModal";
 import Auth from "../../Auth";
 import useAuth from "../../../hooks/useAuth";
 import useCart from "../../../hooks/useCart";
-import { getMeApi } from "../../../api/user";
+import { getMeApi } from "../../../Api/user";
 import { getPlatformsApi } from "../../../Api/platform";
 import { map } from "lodash";
 //Si no hay productos en el carrito el label del  contador no deberia aparecer
