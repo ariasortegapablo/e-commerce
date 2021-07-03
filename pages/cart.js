@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BasicLayout from "../layouts/BasicLayout";
-import { getGameByUrlApi } from "../api/game";
+import { getGameByUrlApi } from "../Api/game";
 import useCart from "../hooks/useCart";
 import SummaryCart from "../components/Cart/SummaryCart";
 import AddressShipping from "../components/Cart/AddressShipping";
