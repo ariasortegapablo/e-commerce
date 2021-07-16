@@ -20,11 +20,9 @@ export default function Account() {
   const [user, setUser] = useState(undefined);
   const [reloadAddresses, setReloadAddresses] = useState(false);
 
-  useEffect(() => {
-    (async () => {
-      const response = await getMeApi(logout);
-      setUser(response || null);
-    })();
+  useEffect(async () => {
+    const response = await getMeApi(logout);
+    setUser(response || null);
   }, [auth]);
 
   if (user === undefined) return null;

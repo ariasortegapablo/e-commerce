@@ -28,8 +28,11 @@ export default function MenuWeb() {
 
   useEffect(() => {
     (async () => {
-      const response = await getPlatformsApi();
-      //console.log(response);
+      // const response = await getPlatformsApi();
+      const data = await fetch("http://localhost:3000/api/games");
+      const response = await data.json();
+
+      console.log(response);
       // en caso de que llegue y no pues un array vacio
       setPlatforms(response || []);
     })();

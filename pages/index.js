@@ -12,6 +12,9 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const response = await getLastGamesApi(30);
+      //const data = await fetch("/api/games");
+      //const response = await data.json();
+      console.log(response);
       if (size(response) > 0) setGames(response);
       else setGames([]);
     })();

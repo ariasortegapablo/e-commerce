@@ -33,6 +33,11 @@ export default function MyApp({ Component, pageProps }) {
   const [reloadCart, setReloadCart] = useState(false);
   const router = useRouter();
   console.log(totalProductsCart);
+  useEffect(async () => {
+    const response = await fetch("/api/games");
+    const data = await response.json();
+    console.log(data);
+  }, []);
   useEffect(() => {
     console.log("me renderice");
     //si no hay va devolver null
